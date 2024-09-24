@@ -1,0 +1,175 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Fundo azul claro */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #87CEFA; /* Azul claro */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Seções */
+.section {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo para a seção com imagem de fundo */
+.section-home {
+    background-image: url('../img/tubes-2672187_1280.jpg'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 200px 20px;
+}
+
+#home h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+#home button {
+    background-color: #00BFFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#home button:hover {
+    background-color: #1E90FF;
+}
+
+/* Estilo para os serviços */
+#services .service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Para garantir que os itens se ajustem em telas pequenas */
+}
+
+.service-item {
+    width: 30%;
+    background-color: #f0f8ff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #87CEFA;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease; /* Animação suave ao passar o mouse */
+}
+
+/* Formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #87CEFA;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #87CEFA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #00BFFF; /* Efeito de hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: #87CEFA;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.whatsapp-float img {
+    width: 60px;
+    height: 60px;
+}
+
+
+/* Seção de comentários */
+#comentarios {
+    padding: 50px;
+    background-color: #f0f8ff; /* Cor de fundo leve */
+    text-align: center;
+}
+
+#comentarios h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#comentarios iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Efeito de hover */
+}
+
+
+/* Responsividade para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    .service-item {
+        width: 45%; /* Reduz para 45% da largura em telas médias */
+    }
+}
+
+/* Responsividade para telas menores que 480px (celulares) */
+@media (max-width: 480px) {
+    .service-item {
+        width: 100%; /* Em telas muito pequenas, os itens ocupam 100% da largura */
+    }
+}

@@ -1,0 +1,215 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografia */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0f5; /* Rosa claro */
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff69b4; /* Rosa vibrante */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ff1493; /* Rosa escuro */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #c71585;
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.destaques h2,
+.galeria h2,
+.sobre h2,
+.contato h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Produtos */
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.produto h3 {
+    margin: 15px 0 10px 0;
+    color: #ff69b4;
+}
+
+.produto p {
+    margin-bottom: 15px;
+}
+
+.carrinho {
+    background-color: #ffe4e1; /* Rosa muito claro */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.carrinho h2 {
+    margin-bottom: 20px;
+}
+
+#carrinho-container p {
+    font-size: 18px;
+}
+
+.finalizar {
+    margin-top: 20px;
+}
+
+/* Formulário de Contato */
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contato label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato button {
+    width: 100%;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ff69b4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .produtos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-text h2 {
+        font-size: 32px;
+    }
+
+    .banner-text p {
+        font-size: 18px;
+    }
+}

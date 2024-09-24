@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG Doces - Produtos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>MG Doces</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="./produtos.html">Produtos</a></li>
+                <li><a href="./sobre.html">Sobre Nós</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Galeria de Produtos -->
+    <section class="galeria">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos-container">
+            <!-- Produto 1 -->
+            <div class="produto">
+                <img src="https://via.placeholder.com/300" alt="Brigadeiro Gourmet">
+                <h3>Brigadeiro Gourmet</h3>
+                <p>R$ 2,50 cada</p>
+                <button class="btn comprar" onclick="adicionarAoCarrinho('Brigadeiro Gourmet', 2.50)">Comprar</button>
+            </div>
+            <!-- Produto 2 -->
+            <div class="produto">
+                <img src="https://via.placeholder.com/300" alt="Beijinho de Coco">
+                <h3>Beijinho de Coco</h3>
+                <p>R$ 2,00 cada</p>
+                <button class="btn comprar" onclick="adicionarAoCarrinho('Beijinho de Coco', 2.00)">Comprar</button>
+            </div>
+            <!-- Produto 3 -->
+            <div class="produto">
+                <img src="https://via.placeholder.com/300" alt="Caixa de Bombons">
+                <h3>Caixa de Bombons</h3>
+                <p>R$ 25,00</p>
+                <button class="btn comprar" onclick="adicionarAoCarrinho('Caixa de Bombons', 25.00)">Comprar</button>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </div>
+    </section>
+
+    <!-- Carrinho de Compras -->
+    <section class="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <div id="carrinho-container">
+            <p>Seu carrinho está vazio.</p>
+        </div>
+        <button class="btn finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 MG Doces. Todos os direitos reservados.</p>
+        <div class="social">
+            <a href="https://www.instagram.com/docesmg_1/" target="_blank">Instagram</a>
+            <a href="https://wa.me/SeuNumero" target="_blank">WhatsApp</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

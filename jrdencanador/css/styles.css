@@ -1,0 +1,249 @@
+/* Layout e Estilo Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1E90FF;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section#hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+section#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+section#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #1E90FF;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #104E8B;
+}
+
+/* Grid de Serviços */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.service-item i {
+    font-size: 2.5rem;
+    color: #1E90FF;
+    margin-bottom: 10px;
+}
+
+
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 100;
+}
+
+.whatsapp-float img {
+    width: 60px;
+    height: 60px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Seção de Trabalhos Realizados */
+#trabalhos {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#trabalhos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Estilo para a seção com imagem de fundo */
+.section-home {
+    background-image: url('../img/tubes-2672187_1280.jpg'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 200px 20px;
+}
+
+/* Estilo da Seção de Contato */
+#contato {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contato h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+#contato p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: #007bff; /* Cor do ícone, pode ser ajustada */
+}
+
+.contact-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.mg-tp-auto {
+    margin-top: 3%;;
+}
+/* Responsividade para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    .service-item {
+        width: 45%; /* Reduz para 45% da largura em telas médias */
+    }
+}
+
+/* Responsividade para telas menores que 480px (celulares) */
+@media (max-width: 480px) {
+    .service-item {
+        width: 100%; /* Em telas muito pequenas, os itens ocupam 100% da largura */
+    }
+
+    .whatsapp-float {
+        position: fixed;
+        bottom: 9%;
+        right: 9%;
+        z-index: 100;
+    }
+    
+    .whatsapp-float img {
+        width: 60px;
+        height: 60px;
+    }
+
+}
