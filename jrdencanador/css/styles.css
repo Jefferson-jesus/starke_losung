@@ -14,7 +14,7 @@ body {
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 header {
@@ -29,6 +29,68 @@ header {
 
 header h1 {
     float: left;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #f1f1f1;
+}
+
+/* Estilos para o Toggle Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif; /* Fonte elegante para títulos */
+    margin-bottom: 20px;
+    color: #e6eaee; /* Cor primária para títulos */
 }
 
 nav ul {
@@ -163,11 +225,15 @@ footer {
 
 /* Estilo para a seção com imagem de fundo */
 .section-home {
-    background-image: url('../img/tubes-2672187_1280.jpg'); /* Imagem de fundo */
+    background-image: url('../img/tubes-2672187_1280.jpg'); 
     background-size: cover;
     background-position: center;
     color: white;
     padding: 200px 20px;
+}
+
+section {
+    margin-bottom: 50px; /* Mais espaçamento entre seções */
 }
 
 /* Estilo da Seção de Contato */
@@ -221,11 +287,190 @@ footer {
 .mg-tp-auto {
     margin-top: 3%;;
 }
+
+/* Estilo da Imagem do Banner Fosca */
+#hero {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de sobreposição para deixar a imagem fosca */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* #hero h2, #hero p {
+    margin: 0;
+} */
+
+#hero .btn-primary {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#hero .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Nossos Serviços com Opacidade e Sombra */
+#servicos {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#servicos h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor */
+    opacity: 0.5; /* Opacidade dos serviços */
+    transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    opacity: 1; /* Opacidade aumenta ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+}
+
+.service-item i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.service-item p {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Animação de Hover nos Botões */
+a.btn-primary {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px); /* Leve elevação ao passar o mouse */
+}
+
+/* Sombra e Profundidade */
+.box-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.box-shadow:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+a.btn-primary {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a.btn-primary:hover {
+    background-color: #0056b3;
+}
+
 /* Responsividade para telas menores que 768px (tablets e celulares) */
 @media (max-width: 768px) {
     .service-item {
         width: 45%; /* Reduz para 45% da largura em telas médias */
     }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #007bff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero {
+        height: 70vh; /* Reduz a altura do hero em telas menores */
+    }
+
+    header {
+        /* background-color: rgba(0, 0, 0, 0.8); */
+    }
+    
 }
 
 /* Responsividade para telas menores que 480px (celulares) */

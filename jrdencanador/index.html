@@ -17,39 +17,50 @@
 
     <!-- Estilos Personalizados -->
     <link rel="stylesheet" href="./css/styles.css"> <!-- Mover estilos complexos para um arquivo CSS externo -->
+    <link rel="stylesheet" href="./css/styles_trabalho.css">
+    <!-- Mover estilos complexos para um arquivo CSS externo -->
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="section">
+    <!-- HEADER -->    
+    <header>
         <div class="container">
             <div class="logo">
-                <h1>JRD Soluções</h1>
+                <a href="#">Minha Empresa</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#trabalhos">Trabalhos Realizados</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
-
+    
     <!-- HERO SECTION COM IMAGEM DE FUNDO -->
-    <section id="hero" class="section section-home" >
+    <section id="hero" class="section section-home">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <h2>Soluções rápidas e eficazes para seu lar</h2>
             <p>Atendimento especializado em encanamento e marido de aluguel.</p>
-            <a href="https://wa.me/5511974967065?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento!" class="btn-primary">Solicitar Orçamento</a>
+            <a href="https://wa.me/5511974967065?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento!"
+                class="btn-primary">Solicitar Orçamento</a>
         </div>
     </section>
 
     <!-- NOSSOS SERVIÇOS -->
-    <section id="servicos" class="mg-tp-auto">
-        <div class="container">
-            <h2>Nossos Serviços</h2>
+    <section id="servicos" class="section">
+        <h2>Nossos Serviços</h2>
+        <div class="container">            
             <div class="services-grid">
                 <div class="service-item">
                     <i class="fas fa-wrench"></i>
@@ -71,44 +82,43 @@
     </section>
 
     <!-- TRABALHOS REALIZADOS -->
-    <section id="trabalhos mg-tp-auto" class="mg-tp-auto">
-        <div class="container">
-            <h2>Trabalhos Realizados</h2>
+    <section id="trabalhos">
+        <h2>Trabalhos Realizados</h2>
+        <div class="container">            
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="./img/plumbing-840835_1280.jpg" alt="Trabalho realizado 1">
-                    <p>Instalação hidráulica completa</p>
+                <div class="gallery-item box-shadow">
+                    <img src="./img/tubes-2672187_1280.jpg" alt="Trabalho 1">
+                    <p>Instalação de Sistema de Aquecimento</p>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item box-shadow">
+                    <img src="./img/plumbing-840835_1280.jpg" alt="Trabalho 3">
+                    <p>Manutenção em Encanamentos</p>
+                </div>
+                <!-- Adicione mais imagens conforme necessário -->
+                <div class="gallery-item box-shadow">
                     <img src="./img/tubes-2672187_1280.jpg" alt="Trabalho realizado 2">
                     <p>Reparo em sistema elétrico</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="./img/tubes-2672187_1280.jpg" alt="Trabalho realizado 3">
-                    <p>Manutenção de encanamento</p>
+                <div class="gallery-item box-shadow">
+                    <img src="./img/tubes-2672187_1280.jpg" alt="Trabalho realizado 2">
+                    <p>Reparo em sistema elétrico</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="./img/tubes-2672187_1280.jpg" alt="Trabalho realizado 3">
-                    <p>Manutenção de encanamento</p>
+                <div class="gallery-item box-shadow">
+                    <img src="./img/tubes-2672187_1280.jpg" alt="Trabalho realizado 2">
+                    <p>Reparo em sistema elétrico</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="./img/tubes-2672187_1280.jpg" alt="Trabalho realizado 3">
-                    <p>Manutenção de encanamento</p>
+                <div class="gallery-item box-shadow">
+                    <img src="./img/tubes-2672187_1280.jpg" alt="Trabalho realizado 2">
+                    <p>Reparo em sistema elétrico</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="./img/tubes-2672187_1280.jpg" alt="Trabalho realizado 3">
-                    <p>Manutenção de encanamento</p>
-                </div>
-
-                <!-- Adicione mais imagens conforme necessário -->
+                
             </div>
         </div>
     </section>
 
-
     <!-- SEÇÃO DE AVALIAÇÕES (GOOGLE) -->
-    <section id="comentarios" class="section mg-tp-auto">
-        <div class="section">
+    <section id="avaliacoes" class="section mg-tp-auto">
+        <div class="section container">
             <div class="elfsight-app-1a458db0-738a-4134-a40d-51ce3d428a3b" data-elfsight-app-lazy>
             </div>
         </div>
@@ -116,9 +126,9 @@
 
     <!-- FORMULÁRIO DE CONTATO -->
     <section id="contato" class="mg-tp-auto">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <p>Entre em contato conosco pelo telefone ou WhatsApp:</p>
+        <h2>Entre em Contato</h2>
+        <p>Entre em contato conosco pelo telefone ou WhatsApp:</p>
+        <div class="container">            
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-phone-alt"></i>
@@ -140,7 +150,6 @@
         </div>
     </section>
 
-
     <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
     <a href="https://wa.me/5511968451738?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento!"
         class="whatsapp-float whatsapp-button" target="_blank">
@@ -150,7 +159,8 @@
     <!-- FOOTER -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 JRD Soluções e Manutenções. Todos os direitos reservados. / Desenvolvido por <b>STARKE LOSUNG</b></p>
+            <p>&copy; 2024 JRD Soluções e Manutenções. Todos os direitos reservados. / Desenvolvido por <b>STARKE
+                    LOSUNG</b></p>
         </div>
     </footer>
 
